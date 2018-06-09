@@ -1,0 +1,215 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.dark-blue{
+	color: #00408B;
+}
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: table;
+}
+body{
+	background-color: #E1E1E1;
+}
+.header{
+	background-color: #4A90E2;
+}
+.header ul{
+	width: 660px;
+	height: 75px;
+	margin: 0 auto;
+}
+.header ul li{
+	width: 160px;
+	float: left;
+	text-align: center;
+	margin: 0 30px;
+}
+.header li a{
+	font-size: 24px;
+	text-decoration: none;
+	display: block;
+	padding: 23px 0;
+
+}
+.header li a:hover,.header li a.active{
+	color: #fff;
+	border-bottom:solid 5px #00408B;
+}
+.content{
+	width: 660px;
+	margin: 0 auto;
+}
+.add-task{
+	font-size: 24px;
+	color: #E1E1E1;
+	border: solid 1px  #C8C8C8;
+	background-color: #fff;
+	margin-top: 20px;
+	padding: 20px;
+
+}
+.task{
+	background: #F2F2F2;
+	box-shadow: 0 4px 4px 0 #C8C8C8;
+	border-radius: 5px;
+	transition: all 1s;
+	margin-bottom: 20px;
+	transition: all 0.5s;
+	
+}
+.task:hover{
+	box-shadow: 3px 6px 6px 0 #C8C8C8;
+	margin-bottom: 25px;
+	margin-top: -5px;
+}
+.task.active{
+	background: #FFF2DC;
+}
+.task-list{
+	border-bottom: 1px solid #C8C8C8;
+	margin-top: 20px;
+	font-size: 24px;
+	padding: 20px;	
+	letter-spacing: 0.5px;
+	line-height: 1.5;
+}
+.checkbox{
+	width: 24px;
+	height: 24px; 
+	background: #FFFFFF;
+	border-radius: 2px; 
+	position: relative;
+	float: left;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.task-list i{
+	padding-right: 20px;
+}
+.task-icon-b{
+	float: left;
+}
+.task-icon-b i{
+	color: #757575;
+}
+.task-icon-r{
+	float: right;	
+}
+.fa-check{
+	opacity: 0;
+	position: absolute;
+}
+.fa-check.active{
+	opacity: 1;
+	color: #FFF;
+}
+.checkbox.active{
+	background: blue;
+}
+.task-icon-b p.active{
+	text-decoration: line-through;
+}
+.fa-star-o{
+	position: relative;	
+}
+.fa-pencil{
+	cursor: pointer;
+}
+.fa-star{
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	color: #F5A623;
+}
+.fa-star:hover,.fa-star.active{
+	opacity: 1;
+}
+.task-content{
+	border-top: 1px solid #C8C8C8;
+	line-height: 1.5;
+	font-size: 20px;
+	display: none;
+}
+.task-content li{
+	padding: 20px 20px 0 64px;	
+}
+.task-content img:before{
+	margin-right: 7px;
+}
+.task-content li input{
+	margin-left: 24px;
+	padding: 10px;
+}
+.task-content textarea{
+	width: 445px;
+	margin-left: 24px;
+	padding: 10px;
+}
+
+.button button{
+	width: 50%;
+	float: left;
+	padding: 20px 0;
+	border: 0;
+	background: #fff;
+	color: #D0021B;
+	font-size: 24px;
+}
+
+.button button:hover{
+	color:#fff;
+	background: #4A90E2;
+	cursor: pointer;
+}
+
+
+
+
